@@ -1,0 +1,625 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: pfd;
+    src: url(/source/libs/pfdintextcondpro-regular.ttf);
+}
+
+@font-face {
+    font-family: pfdmedium;
+    src: url(/source/libs/pfdintextcomppro-medium.ttf);
+}
+
+header {
+    height: 515px;
+    border-top: 7px solid #ecd552;
+    background: #ffffff url(/source/img/header-main.gif) center top no-repeat;
+    background-size: cover;
+}
+.header-region{
+    height: 90px;
+}
+#menu {
+    display: block;
+}
+
+#menu > ul {
+    padding-top: 50px;
+}
+
+#menu li {
+    padding: 0px;
+}
+
+#menu li a{
+    padding: 5px 0px;
+    display: inline-block;
+    font: 16px 'OrenburgC','Trebuchet MS',Arial,sans-serif;
+    color: #5a5c5d;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menu li a:hover{
+    color: #7b7d7e;
+    border-bottom: 3px solid #f5e89f;
+    background-color: transparent;
+}
+
+#navbar > div.header-region > div {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar {
+    margin: 0px;
+    padding: 0px;
+}
+
+#login > ul {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+@media screen and (max-width: 867px){
+    header {
+        height: 640px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #menu > ul > li.col-xs-12 {
+        width: 100%;
+    }
+
+    #menu {
+        text-align: center;
+    }
+
+    #menu > ul {
+        padding-top: 0px;
+    }
+    .header-region{
+        height: 215px;
+    }
+}
+@media screen and (max-width: 660px) {
+    header .logo img {
+        max-width: 200px;
+        margin-right: -20px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #menu li {
+        padding: 6px;
+        width: inherit;
+    }
+    #menu > ul {
+        padding-left: 50px;
+    }
+    #login{
+        width: inherit;
+    }
+    #login ul {
+        position: absolute;
+        top: 0px;
+    }
+    #login li{
+        padding: 0px;
+    }
+}
+
+.logo {
+    float: left;
+    margin: 20px 0 0 15px;
+    padding: 0;
+}
+
+#login {
+    display: block;
+}
+
+#login ul li a {
+    width: 135px;
+    height: 49px;
+    margin: 0;
+    padding: 13px 0 0 10px;
+    font-size: 11px;
+    text-align: left;
+    font: 11px/14px 'Trebuchet MS',Arial,sans-serif;
+    text-transform: uppercase;
+    display: block;
+    background: #f5e89f url(/source/img/bg-header-cabinet.png) 100% center no-repeat;
+    transition: background 200ms;
+}
+
+@media screen and (min-width: 1360px) {
+    #login{
+        width: inherit;
+    }
+    #login li{
+        padding: 0px;
+    }
+    #login ul {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+}
+
+#login a:hover{
+    text-decoration: none;
+
+    color: #5a5c5d;
+    background: #f5e89f url(/source/img/bg-header-cabinet-hover.png) 100% center no-repeat;
+}
+
+/*Рухома частина хедера*/
+.region-navigator-inner{
+    height: 340px;
+
+    margin-top: 10px;
+    padding-top: 57px;
+    position: relative;
+    display: block;
+}
+
+.header-parallax-1{
+    width: 100%;
+    height: 340px;
+    background: url(/source/img/s1.png) center no-repeat;
+}
+
+.header-parallax-2{
+    width: 100%;
+    height: 340px;
+    background: url(/source/img/s2.png) center no-repeat;
+}
+
+.header-parallax-3{
+    width: 100%;
+    height: 340px;
+    background: url(/source/img/s3.png) center no-repeat;
+}
+
+.region-navigation{
+    padding-top: 102px;
+    background: url(/source/img/bg-header-statistic.png) center 230px no-repeat;
+    text-align: center;
+    height: 340px;
+}
+
+/*Блоки з каунерами*/
+#block-custom-block-dataset-count-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 212px;
+    height: 200px;
+    margin: -10px 0 0 45px;
+    padding-top: 55px;
+    background: url(/source/img/bg-header-statistic-dataset.png) 100% bottom no-repeat;
+}
+
+#block-custom-block-providers-count-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 212px;
+    height: 200px;
+    margin: -10px 0 0 45px;
+    padding-top: 55px;
+    background: url(/source/img/bg-header-statistic-rozpor.png) 100% bottom no-repeat;
+}
+
+.view-footer{
+    display: table-cell;
+    width: 310px;
+    height: 115px;
+    vertical-align: middle;
+}
+
+.count{
+    text-align: center;
+    margin-right: 5px;
+    font: 80px/62px pfdmedium,'Trebuchet MS',Arial,sans-serif;
+    color: #85b6ce;
+}
+
+.text{
+    width: 120px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    font: 18px pfd,'Trebuchet MS',Arial,sans-serif;
+}
+
+#block-custom-block-providers-count-block > div > div > div.count{
+    color: #ecd552;
+}
+
+/*Search Block*/
+#searchblock{
+    padding: 10px 0;
+    background: #e8e8e8;
+    display: inline-block;
+    width: 100%;
+    text-align: center;}
+
+#searchblock .custom-container{
+    min-height: 120px;
+    width: 100%;
+    display: inline-block;
+}
+
+#searchblock > div > h2{
+    margin: 0 0 16px 0;
+    font: 24px 'OrenburgC-Bold','Trebuchet MS',Arial,sans-serif;
+    text-transform: uppercase;
+    color: #85b6ce;
+}
+
+#search-line-block{
+    margin-bottom: .5em;
+    margin: 0 15vw;
+    position: relative;
+}
+
+#search-line{
+    height: 49px;
+    padding: 0 80px 0 15px;
+    color: #a9a9a9;
+    border: none;
+    border-radius: 0;
+}
+
+#search-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    height: 49px;
+    background: url(/source/img/search-icon.png) center center no-repeat;
+    font-size: 0;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 12px;
+}
+
+/*radio btn*/
+
+.btn-all{
+    font: 16px 'OrenburgC','Trebuchet MS',Arial,sans-serif;
+    background: #f1f1f1;
+    color: #5a5c5d;;
+    display: inline-block;
+    min-width: 75px;
+    height: 25px;
+    max-height: 25px;
+    padding: 2px 10px 0 10px;
+    margin: 0 0 5px 5px;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.btn-all:hover{
+    background: #ecd552;
+}
+
+/*.btn-all:active{*/
+    /*background: #ecd552;*/
+/*}*/
+
+.radio-all{
+    display: none;
+}
+
+
+/*Custom container*/
+.custom-container{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.block-title a{
+    font: 24px 'OrenburgC-Bold','Trebuchet MS',Arial,sans-serif;
+    text-transform: uppercase;
+    color: #85b6ce;
+}
+
+.views-row{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    height: 210px;
+    margin: 0 10px 50px 10px;
+    border-radius: 50%;
+    border: 1px solid #ababab;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.views-row-image{
+    width: 110px;
+    height: 110px;
+    margin: 50px 0 0 50px;
+    position: relative;
+}
+.views-row-name a{
+    font: 20px 'OrenburgC','Trebuchet MS',Arial,sans-serif;
+    color: #3e4050;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -105px 0 0 -105px;
+    display: block;
+    width: 210px;
+    height: 210px;
+    padding: 135px 40px 0 40px;
+    border-radius: 50%;
+}
+
+
+/*Footer*/
+.footer{
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 45px;
+    padding-top: 35px;
+    padding-bottom: 36px;
+    border-top: 1px solid #E5E5E5;
+    padding: 35px 30px 30px 60px;
+    color: #a9a9a9;
+    background: #4a4b4d;
+}
+
+footer .logo-copyright .copyright {
+    margin-top: 5px;
+    padding-left: 62px;
+    font-size: 12px;
+}
+
+.header-pages{
+    position: relative;
+    height: 240px;
+    text-align: center;
+    background: #ffffff url(/source/img/header-main-not-front.gif) center top no-repeat;
+    background-size: cover;
+    border-top: 7px solid #ecd552;
+    overflow: hidden;
+}
+
+.my-search{
+    position: absolute;
+    right: 0;
+    top: 191px;
+    height: 49px;
+    width: 49px;
+    padding: 0 0 0 45px;
+    border: 2px solid #ecd552;
+    background: #ffffff url(/source/img/search-lupa.png) 100% center no-repeat;
+}
+
+/*Developers*/
+.page-type{
+    position: relative;
+    width: 100%;
+    min-height: 73px;
+    margin: 0;
+    padding: 25px 0;
+    background: #f6f6f6;
+    display: inline-block;
+}
+
+.page-type h1 {
+    font: bold 23px/25px OrenburgC,'Trebuchet MS',Arial,sans-serif;
+    color: #85b6ce;
+    margin: 0 5vw;
+    text-transform: uppercase;
+}
+
+.breadcrumb{
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 10px 5vw;
+    color: #a9a9a9;
+    font: 14px 'OrenburgC','Trebuchet MS',Arial,sans-serif;
+    background: none;
+    text-align: left;
+}
+
+.breadcrumb a{
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 16px;
+    font-size: 0;
+    background: url(/source/img/home.png) 0 0 no-repeat;
+}
+
+.panel-default{
+    min-height: 55px;
+    border-bottom: 1px solid #dcdcdc;
+    cursor: pointer;
+    display: table;
+    width: 100%;
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.panel-heading{
+    border-radius: 0%;
+    padding: 0;
+}
+
+.panel-title:hover{
+    color: #85b6ce;
+}
+
+.panel-title{
+    background: url(/source/img/arrows--down-faq.png) 97% center no-repeat;
+}
+
+.panel-title a {
+    text-decoration: none;
+    display: block;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.row-accordion{
+    margin: 0 5vw;
+}
+
+.panel-title a:focus .panel-heading{
+    background-color: #1b6d85;
+}
+
+/*feedback*/
+.my-form{
+    border: solid 3px #f6f6f6;
+    border-bottom: solid 70px #f6f6f6;
+    margin: 0 5vw;
+}
+
+.webform-component{
+    width: 43%;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.my-form .field {
+    padding-top: 50px;
+    padding-left: 21%;
+    padding-right: 4%;
+}
+
+.webform-component input{
+    width: 78%;
+    box-shadow: none;
+    border-radius: 5px;
+    border-color: #a9a9a9;
+}
+
+.webform-component select{
+    width: 78%;
+    box-shadow: none;
+    border-radius: 5px;
+    border-color: #a9a9a9;
+}
+
+.form-textarea-wrapper{
+    width: 180%;
+}
+
+.form-textarea-wrapper textarea{
+    height: 215px;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+}
+
+.webform-submit{
+    background-color: #f6f6f6;
+    border: solid 2px #ecd552;
+    font: bold 16px OrenburgC,'Trebuchet MS',Arial,sans-serif;
+    text-transform: uppercase;
+    color: #5a5c5d;
+    position: absolute;
+    top: 19px;
+    left: 40vw;
+}
+
+.webform-submit:hover{
+    background: #ecd552;
+    color: #5a5c5d;
+    border-color: #ecd552;
+}
+
+.button-send{
+    text-align: center;
+    position: relative;
+}
+
+/*DATA*/
+.bbc0, .bbc-sport0, .national-geographic0, .google0, .new-york0, .the-hindu0{
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    min-height: 400px;
+
+}
+
+.news-container:hover{
+    border: 5px solid #f5e89f;
+}
+
+.news{
+    padding:0px;
+    margin: 0px;
+}
+
+.news-container{
+    border: 5px solid white;
+    background-color: #d9edf7;
+    padding: 10px;
+    margin: 10px;
+    min-height: 350px;
+}
+
+.img{
+    display: block;
+    height: 15rem;
+}
+
+@media screen and (max-width: 768px){
+    .img{
+        height: 350px;
+    }
+}
+
+.tab-content{
+    padding: 15px;
+}
+
+.content{
+    display: block;
+    text-align: center;
+}
+
+.content img{
+    max-height: 150px;
+    margin: 15px;
+}

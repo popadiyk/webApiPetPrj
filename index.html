@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html onmousemove="parallax()" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вёрстка</title>
+    <script type="text/javascript" src="/source/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="/source/js/script.js"></script>
+    <link rel="stylesheet" href="source/css/bootstrap.css">
+    <link rel="stylesheet" href="source/css/style.css">
+</head>
+<body>
+    <header id="navbar" class="col-xs-12">
+        <div class="header-region">
+            <div id="mainlogo" class="col-sm-5 col-md-4 col-xs-4 col-lg-3">
+                <a class="logo" href="/" title="Головна">
+                    <img src="source/img/logo.png" alt="Головна">
+                </a>
+            </div>
+            <div id="menu" class="col-sm-6 col-md-6 col-xs-6 col-lg-9">
+                <ul class="menu nav">
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg- first leaf menu-mlid-619"><a href="/news.html" title="">Новини</a></li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-885"><a href="/data" title="">Набори даних</a></li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-621"><a href="/applications" title="">Каталог додатків</a></li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-622"><a href="/providers-info" title="">Розпорядники</a></li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-1046"><a href="developers.html">Розробникам</a></li>
+                    <li class="col-xs-12 col-sm-6 col-md-4 col-lg- last leaf menu-mlid-889"><a href="feedback.html">Зворотній зв'язок</a></li>
+                </ul>
+            </div>
+            <div id="login" class="col-sm-1 col-md-2 col-xs-2">
+                <ul class="menu nav">
+                    <li class="first last leaf menu-mlid-891">
+                        <a href="/user" title="">Персональний кабінет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="region-navigator-inner">
+            <div class="header-parallax-1">
+                <div class="header-parallax-2">
+                    <div class="header-parallax-3">
+                        <div class="region region-navigation">
+                            <section id="block-custom-block-dataset-count-block" class="block block-custom-block clearfix">
+                                <div class="content">
+                                    <div class="view-footer counted">
+                                        <div class="count">
+                                            13112		</div>
+                                        <div class="text">
+                                            Наборів даних		</div>
+                                    </div>
+                                </div>
+                            </section> <!-- /.block -->
+                            <section id="block-custom-block-providers-count-block" class="block block-custom-block clearfix">
+
+
+                                <div class="content view-information-providers-views">
+                                    <div class="view-footer counted">
+                                        <div class="count">
+                                            1277		</div>
+                                        <div class="text">
+                                            Розпорядників інформації		</div>
+                                    </div>
+                                </div>
+                            </section> <!-- /.block -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="searchblock">
+        <div class="custom-container">
+            <h2 class="block-title">Розпочніть пошук</h2>
+            <form action="/search" method="get" id="form-search" accept-charset="UTF-8">
+                <div id="search-line-block">
+                    <input placeholder="Які дані шукаєш?" class="form-control form-text" type="text" id="search-line" name="search_api_multi_fulltext" value="" size="30" maxlength="128" autocomplete="off">
+                    <button class="btn btn-primary form-submit" id="search-button" name="search" value="Пошук" type="submit">Пошук</button>
+                    <div class="views-widget">
+                        <label class="btn-all">
+                            всі <input name="btn-info-search" type="radio" value="all" class="radio-all">
+                        </label>
+                        <label class="btn-all">
+                            додатки <input name="btn-info-search" type="radio" value="dodatki" class="radio-all">
+                        </label>
+                        <label class="btn-all">
+                            набори данних <input name="btn-info-search" type="radio" value="nabir" class="radio-all">
+                        </label>
+                        <label class="btn-all">
+                            новини <input name="btn-info-search" type="radio" value="news" class="radio-all">
+                        </label>
+                        <label class="btn-all">
+                            розпорядники інформації <input name="btn-info-search" type="radio" value="rozpor" class="radio-all">
+                        </label>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="custom-container">
+        <h2 class="block-title"><a href="/datasets">Набори даних</a></h2>
+        <div class="views-row views-row-1">
+            <div class="views-row-image views-row-image-1">
+                <figure class="back">
+
+                </figure>
+                <figure class="front">
+                    <img src="/source/img/transport_0.png" width="80" height="80">
+                </figure>
+            </div>
+            <div class="views-row-name">
+                <a href="/">Транспорт</a>
+            </div>
+        </div>
+        <div class="views-row views-row-2">
+            <div class="views-row-image views-row-image-2">
+                <img src="/source/img/state.png" width="80" height="80">
+            </div>
+            <div class="views-row-name">
+                <a href="/">Держава</a>
+            </div>
+        </div>
+        <div class="views-row views-row-3">
+            <div class="views-row-image views-row-image-3">
+                <img src="/source/img/finances.png" width="80" height="80">
+            </div>
+            <div class="views-row-name">
+                <a href="/">Фінанси</a>
+            </div>
+        </div>
+        <div class="views-row views-row-4">
+            <div class="views-row-image views-row-image-4">
+                <img src="/source/img/justice.png" width="80" height="80">
+            </div>
+            <div class="views-row-name">
+                <a href="/">Юстиція</a>
+            </div>
+        </div>
+        <div class="views-row views-row-5">
+            <div class="views-row-image views-row-image-5">
+                <img src="/source/img/taxes.png" width="80" height="80">
+            </div>
+            <div class="views-row-name">
+                <a href="/">Податки</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo-copyright">
+            <div class="logo-footer name-site">
+                <a class="logo-footer" href="/" title="Головна">
+                    <img src="/source/img/logo2.png" alt="Головна">
+                </a>
+            </div>
+            <div class="copyright">
+                © 2015-2017 Державне агентство з питань електронного урядування України		</div>
+        </div>
+
+    </footer>
+</body>
+</html>

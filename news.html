@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Данні</title>
+    <link rel="stylesheet" href="source/css/bootstrap.css">
+    <link rel="stylesheet" href="source/css/style.css">
+    <script type="text/javascript" src="/source/js/script.js"></script>
+    <script type="text/javascript" src="/source/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="/source/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/source/js/data.js"></script>
+</head>
+<body>
+<header id="navbar" class="header-pages col-xs-12">
+    <div class="header-region">
+        <div id="mainlogo" class="col-sm-5 col-md-4 col-xs-4 col-lg-3">
+            <a class="logo" href="/" title="Головна">
+                <img src="source/img/logo.png" alt="Головна">
+            </a>
+        </div>
+        <div id="menu" class="col-sm-6 col-md-6 col-xs-6 col-lg-9">
+            <ul class="menu nav">
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- first leaf menu-mlid-619"><a href="news.html" title="">Новини</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-885"><a href="/datasets" title="">Набори даних</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-621"><a href="/applications" title="">Каталог додатків</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-622"><a href="/providers-info" title="">Розпорядники</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-1046"><a href="developers.html">Розробникам</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- last leaf menu-mlid-889"><a href="feedback.html">Зворотній зв'язок</a></li>
+            </ul>
+        </div>
+        <div id="login" class="col-sm-1 col-md-2 col-xs-2">
+            <ul class="menu nav">
+                <li class="first last leaf menu-mlid-891">
+                    <a href="/user" title="">Персональний кабінет</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<input placeholder="Які дані шукаєш?" onmouseover="searchhover()" onmouseout="searchout()" onfocus="searchfocus()" onblur="searchblur()" class="my-search" type="text" name="search" value="" size="30" maxlength="128" autocomplete="off">
+
+<div>
+    <!-- Навигация -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li><a href="#bbc-chanel" aria-controls="profile" role="tab" data-toggle="tab" onclick="getNews('bbc')">BBC</a></li>
+        <li><a href="#bbc-sport-chanel" aria-controls="messages" role="tab" data-toggle="tab" onclick="getNews('bbc-sport')">BBC Sport</a></li>
+        <li><a href="#national-geographic" aria-controls="settings" role="tab" data-toggle="tab" onclick="getNews('national-geographic')">National Geographic</a></li>
+        <li><a href="#google" aria-controls="settings" role="tab" data-toggle="tab" onclick="getNews('google')">Google</a></li>
+        <li><a href="#new-york" aria-controls="settings" role="tab" data-toggle="tab" onclick="getNews('new-york')">New York Times</a></li>
+        <li><a href="#the-hindu" aria-controls="settings" role="tab" data-toggle="tab" onclick="getNews('the-hindu')">The Hindu</a></li>
+    </ul>
+    <!-- Содержимое вкладок -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="bbc-chanel">
+            <div class="row bbc-news news">
+                <div class="bbc0 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="news-container">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                        <p class="url"></p>
+                        <div class="img col-xs-12"></div>
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="bbc-sport-chanel">
+            <div class="row bbc-sport-news news" >
+                <div class="bbc-sport0 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="news-container">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                        <p class="url"></p>
+                        <div class="img col-xs-12"></div>
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="national-geographic">
+            <div class="row national-geographic-news news">
+                <div class="national-geographic0 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="news-container">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                        <p class="url"></p>
+                        <div class="img col-xs-12"></div>
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="google">
+            <div class="row google-news news">
+                <div class="google0 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="news-container">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                        <p class="url"></p>
+                        <div class="img col-xs-12"></div>
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="new-york">
+            <div class="row new-york-news news">
+                <div class="new-york0 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="news-container">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                        <p class="url"></p>
+                        <div class="img col-xs-12"></div>
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="the-hindu">
+            <div class="row the-hindu-news news">
+                <div class="the-hindu0 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="news-container">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                        <p class="url"></p>
+                        <div class="img col-xs-12"></div>
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content col-xs-12">
+    <img src="source/img/bbc-news-m.png">
+    <img src="source/img/bbc-sport-m.png">
+    <img src="source/img/national-geographic-m.png">
+    <img src="source/img/google-news-m.png">
+    <img src="source/img/the-new-york-times-m.png">
+    <img src="source/img/the-hindu-m.png">
+</div>
+
+
+<footer class="row footer">
+    <div class="logo-copyright">
+        <div class="logo-footer name-site">
+            <a class="logo-footer" href="/" title="Головна">
+                <img src="/source/img/logo2.png" alt="Головна">
+            </a>
+        </div>
+        <div class="copyright">
+            © 2015-2017 Державне агентство з питань електронного урядування України		</div>
+    </div>
+
+</footer>
+</body>
+</html>

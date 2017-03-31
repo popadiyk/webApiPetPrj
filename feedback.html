@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фидбек</title>
+    <link rel="stylesheet" href="source/css/bootstrap.css">
+    <link rel="stylesheet" href="source/css/style.css">
+    <script type="text/javascript" src="/source/js/script.js"></script>
+    <script type="text/javascript" src="/source/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="/source/js/bootstrap.js"></script>
+</head>
+<body>
+    <header id="navbar" class="header-pages col-xs-12">
+    <div class="header-region">
+        <div id="mainlogo" class="col-sm-5 col-md-4 col-xs-4 col-lg-3">
+            <a class="logo" href="/" title="Головна">
+                <img src="source/img/logo.png" alt="Головна">
+            </a>
+        </div>
+        <div id="menu" class="col-sm-6 col-md-6 col-xs-6 col-lg-9">
+            <ul class="menu nav">
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- first leaf menu-mlid-619"><a href="news.html" title="">Новини</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-885"><a href="/datasets" title="">Набори даних</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-621"><a href="/applications" title="">Каталог додатків</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-622"><a href="/providers-info" title="">Розпорядники</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- leaf menu-mlid-1046"><a href="developers.html">Розробникам</a></li>
+                <li class="col-xs-12 col-sm-6 col-md-4 col-lg- last leaf menu-mlid-889"><a href="feedback.html">Зворотній зв'язок</a></li>
+            </ul>
+        </div>
+        <div id="login" class="col-sm-1 col-md-2 col-xs-2">
+            <ul class="menu nav">
+                <li class="first last leaf menu-mlid-891">
+                    <a href="/user" title="">Персональний кабінет</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <div class="page-type">
+        <h1>ЗВОРОТНІЙ ЗВ'ЯЗОК</h1>
+    </div>
+    <div class="region-breadcrumb">
+        <div class="custom-container">
+            <div class="breadcrumb">
+                <a href="/">Головна</a> &gt; <span class="node-title">Зворотній зв'язок</span>
+            </div>
+        </div>
+    </div>
+    <form class="my-form" action="/feedback" method="post">
+        <div class="field">
+            <div class="webform-component webform-component-imya">
+                <label for="edit-submitted-imya">Ім'я <span class="form-required" title="Це поле - обов’язкове.">*</span></label>
+                <input required="required" placeholder="Вкажіть своє ім'я" class="form-control form-text required" type="text" id="edit-submitted-imya" name="submitted[imya]" value="" size="60" maxlength="128">
+            </div>
+            <div class="webform-component webform-component--prizvyshche">
+                <label for="edit-submitted-prizvyshche">Прізвище <span class="form-required" title="Це поле - обов’язкове.">*</span></label>
+                <input required="required" placeholder="Вкажіть своє прізвище" class="form-control form-text required" type="text" id="edit-submitted-prizvyshche" name="submitted[prizvyshche]" value="" size="60" maxlength="128">
+            </div>
+            <div class="webform-component webform-component--oberit-temu">
+                <label for="edit-submitted-oberit-temu-select">Тема <span class="form-required" title="Це поле - обов’язкове.">*</span></label>
+                <select class="select-or-other-select form-control form-select required" id="edit-submitted-oberit-temu-select" name="submitted[oberit_temu][select]"><option value="" selected="selected">- Немає -</option><option value="1">Технічні аспекти роботи веб-порталу</option><option value="2">Запит на набори даних</option><option value="3">Пропозиції по розвитку веб-порталу</option><option value="select_or_other">Інший...</option></select>
+            </div>
+            <div class="webform-component webform-component--e-mail">
+                <label for="edit-submitted-e-mail">E-mail <span class="form-required" title="Це поле - обов’язкове.">*</span></label>
+                <input required="required" class="email form-control form-text form-email required" placeholder="Вкажіть свою адресу" type="email" id="edit-submitted-e-mail" name="submitted[e_mail]" size="60">
+            </div>
+            <div class="webform-component webform-component--povidomlennya">
+                <label for="edit-submitted-povidomlennya">Повідомлення <span class="form-required" title="Це поле - обов’язкове.">*</span></label>
+                <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea required="required" placeholder="Текст повідомлення" class="form-control form-textarea required" id="edit-submitted-povidomlennya" name="submitted[povidomlennya]" cols="60" rows="5"></textarea></div>
+            </div>
+        </div>
+        <div class="button-send">
+            <button class="webform-submit button-primary btn btn-primary form-submit" name="op" value="Надіслати" type="submit">Надіслати</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="logo-copyright">
+            <div class="logo-footer name-site">
+                <a class="logo-footer" href="/" title="Головна">
+                    <img src="/source/img/logo2.png" alt="Головна">
+                </a>
+            </div>
+            <div class="copyright">
+                © 2015-2017 Державне агентство з питань електронного урядування України		</div>
+        </div>
+
+    </footer>
+</body>
+</html>
